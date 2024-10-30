@@ -1,0 +1,86 @@
+.habot-signup-container {
+    text-align: center;
+    /* padding: 20px; */
+    display:flex;
+    width: 100%;
+
+  }
+
+  .left-aligned {
+    text-align: left;
+  }
+  .widthalf{
+    width:50%;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content:center
+    
+  }
+  
+
+
+  
+  .button-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  .cta {
+    margin-top: 20px;
+  }
+  
+  .signup-button {
+    padding: 10px 20px;
+    background-color: #0a5203;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles   
+   (Example) */
+  @media (max-width: 768px) {
+    .location-buttons .button-row {
+      flex-direction: column;
+    }
+  
+    .location-button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+
+
+
+  }
+
+
+  .location-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .location-button {
+    flex: 1;
+    flex-basis: 40%; 
+    padding: 10px;
+    background-color: rgb(237, 216, 178);
+    border-radius: 5px ;
+    border: blueviolet;
+    cursor: pointer;
+    margin: 5px;
+  }

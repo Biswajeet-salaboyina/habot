@@ -1,38 +1,151 @@
 .App {
-  text-align: center;
+  font-family: Arial, sans-serif;
+ overflow-x:  hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App {
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; 
+}
+
+nav ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center; 
+}
+
+nav ul li {
+  margin-left: 20px; 
+  color: grey; 
+  cursor: pointer; 
+}
+
+nav ul li:hover {
+  text-decoration: underline; 
+}
+
+
+nav ul li:last-child {
+  background-color: white; 
+  color: green; 
+  border: 2px solid green; 
+  border-radius: 5px; 
+  padding: 8px 12px; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+nav ul li:last-child:hover {
+  background-color: darkgreen; 
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-container {
+  height: 609px;
+  background-image: url('/public/bgimage.jpg'); 
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto; 
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; 
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+.search-bar input {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.ready-to-dive {
+  text-align: center;
+}
+
+.locations {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.location {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post-requirements {
+  text-align: center;
+}
+
+.video-container {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.how-it-works {
+  text-align: center;
 }
